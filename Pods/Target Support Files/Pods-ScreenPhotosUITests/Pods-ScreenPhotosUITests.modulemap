@@ -1,0 +1,6 @@
+framework module Pods_ScreenPhotosUITests {
+  umbrella header "Pods-ScreenPhotosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
