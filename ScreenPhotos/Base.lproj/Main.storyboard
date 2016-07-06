@@ -686,10 +686,10 @@
             </objects>
             <point key="canvasLocation" x="60" y="758"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo Set View Controller-->
         <scene sceneID="xVi-js-8A4">
             <objects>
-                <viewController id="5Rk-Uz-VW9" sceneMemberID="viewController">
+                <viewController id="5Rk-Uz-VW9" customClass="PhotoSetViewController" customModule="ScreenPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="W3Q-lA-AtR">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -749,7 +749,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="FjQ-vC-78S">
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="FjQ-vC-78S">
                                     <rect key="frame" x="1" y="519" width="198" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -771,10 +771,10 @@
             </objects>
             <point key="canvasLocation" x="507" y="707"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="0hL-Y4-obP">
             <objects>
-                <viewController id="eou-WV-ONu" sceneMemberID="viewController">
+                <viewController id="eou-WV-ONu" customClass="MainViewController" customModule="ScreenPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="c6N-4P-ESE">
                         <rect key="frame" x="0.0" y="0.0" width="795" height="643"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -782,12 +782,78 @@
                             <splitView misplaced="YES" arrangesAllSubviews="NO" dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bgz-rT-DWE">
                                 <rect key="frame" x="0.0" y="43" width="795" height="600"/>
                                 <subviews>
-                                    <customView fixedFrame="YES" id="Yqo-rO-Jb2">
-                                        <rect key="frame" x="0.0" y="0.0" width="395" height="600"/>
+                                    <customView fixedFrame="YES" id="Yqo-rO-Jb2" customClass="ProcessView" customModule="ScreenPhotos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="383.5" height="600"/>
                                         <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQn-RZ-itq">
+                                                <rect key="frame" x="18" y="555" width="95" height="25"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Blurry:" id="IdW-kL-RjS">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cck-md-Nu0">
+                                                <rect key="frame" x="133" y="563" width="81" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="# identified" id="pHW-Pv-fEY">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TTQ-Es-6Y4">
+                                                <rect key="frame" x="18" y="530" width="95" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Too bright:" id="7Jb-hc-5jY">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oq-Th-SDq">
+                                                <rect key="frame" x="133" y="530" width="81" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="# identified" id="KCp-Zt-G1x">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="onC-HA-09u">
+                                                <rect key="frame" x="18" y="497" width="69" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Too dark:" id="8cj-m2-YXx">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLR-Me-8hA">
+                                                <rect key="frame" x="133" y="497" width="81" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="# identified" id="C4o-ci-gcb">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TPA-nq-yyo">
+                                                <rect key="frame" x="18" y="465" width="69" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Similar:" id="JuK-cl-9bD">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f74-mF-T8J">
+                                                <rect key="frame" x="133" y="465" width="126" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="# groups identified" id="qTy-U3-m9c">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
                                     </customView>
-                                    <customView fixedFrame="YES" id="Fgm-Pj-aQ9">
-                                        <rect key="frame" x="405" y="0.0" width="390" height="600"/>
+                                    <customView fixedFrame="YES" id="Fgm-Pj-aQ9" customClass="EliminatedPhotoCollectionView" customModule="ScreenPhotos" customModuleProvider="target">
+                                        <rect key="frame" x="393.5" y="0.0" width="401.5" height="600"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </customView>
                                 </subviews>
@@ -818,10 +884,28 @@
                             <constraint firstItem="Bgz-rT-DWE" firstAttribute="leading" secondItem="c6N-4P-ESE" secondAttribute="leading" id="nNu-NM-pB2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="i2e-Xf-FD6" id="MuX-XQ-8a9"/>
+                        <outlet property="eliminatedPhotoCollectionView" destination="Fgm-Pj-aQ9" id="Yal-oz-Jd7"/>
+                        <outlet property="nextButton" destination="ELs-WB-8TJ" id="5Gl-yc-QSQ"/>
+                        <outlet property="processView" destination="Yqo-rO-Jb2" id="AUt-or-KCP"/>
+                    </connections>
                 </viewController>
                 <customObject id="JsB-aH-Rus" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1012.5" y="728.5"/>
+        </scene>
+        <!--Collection View Item-->
+        <scene sceneID="GA5-e6-QRP">
+            <objects>
+                <customObject id="91S-8p-pCl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <collectionViewItem id="pzV-Qn-hsD" sceneMemberID="viewController">
+                    <view key="view" id="v6N-cL-wtN">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </collectionViewItem>
+            </objects>
         </scene>
     </scenes>
 </document>

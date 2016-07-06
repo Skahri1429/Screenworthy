@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28B0C7791D29D65D00B8B462 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0C7781D29D65D00B8B462 /* ProcessView.swift */; };
+		28B0C77D1D29DDBD00B8B462 /* EliminatedPhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0C77C1D29DDBD00B8B462 /* EliminatedPhotoCollectionView.swift */; };
 		28BB30E01D285CC800A5C0C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB30DF1D285CC800A5C0C7 /* AppDelegate.swift */; };
 		28BB30E41D285CC800A5C0C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BB30E31D285CC800A5C0C7 /* Assets.xcassets */; };
 		28BB30E71D285CC800A5C0C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BB30E51D285CC800A5C0C7 /* Main.storyboard */; };
 		28BB30F21D285CC800A5C0C7 /* ScreenPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB30F11D285CC800A5C0C7 /* ScreenPhotosTests.swift */; };
 		28BB30FD1D285CC800A5C0C7 /* ScreenPhotosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB30FC1D285CC800A5C0C7 /* ScreenPhotosUITests.swift */; };
 		28BB310B1D287EE800A5C0C7 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB310A1D287EE800A5C0C7 /* MainWindow.swift */; };
+		28BB310E1D29AA8000A5C0C7 /* PhotoSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB310D1D29AA8000A5C0C7 /* PhotoSetViewController.swift */; };
+		28BB31111D29AAA700A5C0C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB310F1D29AAA700A5C0C7 /* MainViewController.swift */; };
+		B692A529841E33EA53E3FE35 /* Pods_ScreenPhotos_ScreenPhotosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F892F8A9F3CB42D9CF69417E /* Pods_ScreenPhotos_ScreenPhotosTests.framework */; };
 		C9802708A0214AF83E6A3105 /* Pods_ScreenPhotosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8987F7CEAA1861D50CC080AE /* Pods_ScreenPhotosUITests.framework */; };
 		D19E214EB430893A175AF691 /* Pods_ScreenPhotosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AD42196E671346D78CC03E /* Pods_ScreenPhotosTests.framework */; };
 		DD9BE5A404C5C1A5C66D464F /* Pods_ScreenPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC1EE7FDE338EB5968EEE7D /* Pods_ScreenPhotos.framework */; };
@@ -38,6 +43,9 @@
 /* Begin PBXFileReference section */
 		0514E5BC377DE422F7FDD9FC /* Pods-ScreenPhotosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenPhotosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenPhotosTests/Pods-ScreenPhotosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0539600F0C189F1E8EE8419D /* Pods-ScreenPhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenPhotosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenPhotosTests/Pods-ScreenPhotosTests.release.xcconfig"; sourceTree = "<group>"; };
+		1B3AAEDFB34F68B2CF0EC029 /* Pods-ScreenPhotos-ScreenPhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenPhotos-ScreenPhotosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenPhotos-ScreenPhotosTests/Pods-ScreenPhotos-ScreenPhotosTests.release.xcconfig"; sourceTree = "<group>"; };
+		28B0C7781D29D65D00B8B462 /* ProcessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
+		28B0C77C1D29DDBD00B8B462 /* EliminatedPhotoCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EliminatedPhotoCollectionView.swift; sourceTree = "<group>"; };
 		28BB30DC1D285CC800A5C0C7 /* ScreenPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BB30DF1D285CC800A5C0C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28BB30E31D285CC800A5C0C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +58,9 @@
 		28BB30FC1D285CC800A5C0C7 /* ScreenPhotosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPhotosUITests.swift; sourceTree = "<group>"; };
 		28BB30FE1D285CC800A5C0C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28BB310A1D287EE800A5C0C7 /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		28BB310D1D29AA8000A5C0C7 /* PhotoSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSetViewController.swift; sourceTree = "<group>"; };
+		28BB310F1D29AAA700A5C0C7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4BD48DA34604A0666E70F634 /* Pods-ScreenPhotos-ScreenPhotosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenPhotos-ScreenPhotosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenPhotos-ScreenPhotosTests/Pods-ScreenPhotos-ScreenPhotosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66AD42196E671346D78CC03E /* Pods_ScreenPhotosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenPhotosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8987F7CEAA1861D50CC080AE /* Pods_ScreenPhotosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenPhotosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A025946D6018A06C493F8EE7 /* Pods-ScreenPhotosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenPhotosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenPhotosUITests/Pods-ScreenPhotosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +68,7 @@
 		C03ED208FB9318B11678F4A8 /* Pods-ScreenPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenPhotos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenPhotos/Pods-ScreenPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 		CCC1EE7FDE338EB5968EEE7D /* Pods_ScreenPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD013987B4A652DBF18F3CC3 /* Pods-ScreenPhotosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenPhotosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenPhotosUITests/Pods-ScreenPhotosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F892F8A9F3CB42D9CF69417E /* Pods_ScreenPhotos_ScreenPhotosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenPhotos_ScreenPhotosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19E214EB430893A175AF691 /* Pods_ScreenPhotosTests.framework in Frameworks */,
+				B692A529841E33EA53E3FE35 /* Pods_ScreenPhotos_ScreenPhotosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28B0C7771D29D63B00B8B462 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28B0C7781D29D65D00B8B462 /* ProcessView.swift */,
+				28B0C77C1D29DDBD00B8B462 /* EliminatedPhotoCollectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		28BB30D31D285CC700A5C0C7 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +139,8 @@
 				28BB30E51D285CC800A5C0C7 /* Main.storyboard */,
 				28BB30E81D285CC800A5C0C7 /* Info.plist */,
 				28BB310A1D287EE800A5C0C7 /* MainWindow.swift */,
+				28B0C7771D29D63B00B8B462 /* Views */,
+				28BB310C1D29AA4100A5C0C7 /* View Controllers */,
 			);
 			path = ScreenPhotos;
 			sourceTree = "<group>";
@@ -139,6 +163,15 @@
 			path = ScreenPhotosUITests;
 			sourceTree = "<group>";
 		};
+		28BB310C1D29AA4100A5C0C7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28BB310D1D29AA8000A5C0C7 /* PhotoSetViewController.swift */,
+				28BB310F1D29AAA700A5C0C7 /* MainViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		30CC8C80809F78EB4E681E15 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +181,8 @@
 				0539600F0C189F1E8EE8419D /* Pods-ScreenPhotosTests.release.xcconfig */,
 				DD013987B4A652DBF18F3CC3 /* Pods-ScreenPhotosUITests.debug.xcconfig */,
 				A025946D6018A06C493F8EE7 /* Pods-ScreenPhotosUITests.release.xcconfig */,
+				4BD48DA34604A0666E70F634 /* Pods-ScreenPhotos-ScreenPhotosTests.debug.xcconfig */,
+				1B3AAEDFB34F68B2CF0EC029 /* Pods-ScreenPhotos-ScreenPhotosTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -158,6 +193,7 @@
 				CCC1EE7FDE338EB5968EEE7D /* Pods_ScreenPhotos.framework */,
 				66AD42196E671346D78CC03E /* Pods_ScreenPhotosTests.framework */,
 				8987F7CEAA1861D50CC080AE /* Pods_ScreenPhotosUITests.framework */,
+				F892F8A9F3CB42D9CF69417E /* Pods_ScreenPhotos_ScreenPhotosTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -424,7 +460,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BB310B1D287EE800A5C0C7 /* MainWindow.swift in Sources */,
+				28BB310E1D29AA8000A5C0C7 /* PhotoSetViewController.swift in Sources */,
 				28BB30E01D285CC800A5C0C7 /* AppDelegate.swift in Sources */,
+				28B0C77D1D29DDBD00B8B462 /* EliminatedPhotoCollectionView.swift in Sources */,
+				28BB31111D29AAA700A5C0C7 /* MainViewController.swift in Sources */,
+				28B0C7791D29D65D00B8B462 /* ProcessView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,9 +8,9 @@ target 'ScreenPhotos' do
   # Pods for ScreenPhotos
 
   target 'ScreenPhotosTests' do
-    inherit! :search_paths
-
-        pod 'Charts'
+      inherit! :search_paths
+        pod 'SwiftyJSON'
+        pod 'Alamofire'
   end
 
   target 'ScreenPhotosUITests' do
