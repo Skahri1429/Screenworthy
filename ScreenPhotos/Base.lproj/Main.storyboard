@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
@@ -655,7 +655,7 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="210" y="251" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
                     </window>
                     <connections>
                         <segue destination="JT0-E4-zdd" kind="relationship" relationship="window.shadowedContentViewController" id="2wq-e3-AAu"/>
@@ -769,7 +769,7 @@
                 </viewController>
                 <customObject id="7dS-SK-8gI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="507" y="707"/>
+            <point key="canvasLocation" x="507" y="759"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="0hL-Y4-obP">
@@ -783,7 +783,7 @@
                                 <rect key="frame" x="0.0" y="43" width="795" height="600"/>
                                 <subviews>
                                     <customView fixedFrame="YES" id="Yqo-rO-Jb2" customClass="ProcessView" customModule="ScreenPhotos" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="383.5" height="600"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="600"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQn-RZ-itq">
@@ -852,10 +852,29 @@
                                             </textField>
                                         </subviews>
                                     </customView>
-                                    <customView fixedFrame="YES" id="Fgm-Pj-aQ9" customClass="EliminatedPhotoCollectionView" customModule="ScreenPhotos" customModuleProvider="target">
-                                        <rect key="frame" x="393.5" y="0.0" width="401.5" height="600"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </customView>
+                                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="IY8-LP-9ze">
+                                        <rect key="frame" x="420" y="0.0" width="375" height="600"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <clipView key="contentView" id="WaW-RB-lcn">
+                                            <rect key="frame" x="1" y="1" width="373" height="598"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <collectionView id="EAF-lo-y6j">
+                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="598"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </collectionView>
+                                            </subviews>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="rJ8-AD-dPw">
+                                            <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="qHe-Qg-jJi">
+                                            <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
                                 </subviews>
                                 <holdingPriorities>
                                     <real value="250"/>
@@ -886,26 +905,14 @@
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="i2e-Xf-FD6" id="MuX-XQ-8a9"/>
-                        <outlet property="eliminatedPhotoCollectionView" destination="Fgm-Pj-aQ9" id="Yal-oz-Jd7"/>
+                        <outlet property="flaggedPhotoCollectionView" destination="EAF-lo-y6j" id="UaN-5G-D9Y"/>
                         <outlet property="nextButton" destination="ELs-WB-8TJ" id="5Gl-yc-QSQ"/>
                         <outlet property="processView" destination="Yqo-rO-Jb2" id="AUt-or-KCP"/>
                     </connections>
                 </viewController>
                 <customObject id="JsB-aH-Rus" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012.5" y="728.5"/>
-        </scene>
-        <!--Collection View Item-->
-        <scene sceneID="GA5-e6-QRP">
-            <objects>
-                <customObject id="91S-8p-pCl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <collectionViewItem id="pzV-Qn-hsD" sceneMemberID="viewController">
-                    <view key="view" id="v6N-cL-wtN">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </collectionViewItem>
-            </objects>
+            <point key="canvasLocation" x="1012.5" y="780.5"/>
         </scene>
     </scenes>
 </document>
